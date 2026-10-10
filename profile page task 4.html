@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+            font-family: Arial;
+        }
+
+        .profile {
+            background-color: white;
+            margin: 30px;
+            padding: 20px;
+            border: 2px solid blue;
+        }
+
+        h1 {
+            color: darkblue;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile">
+
+        <h1>My Profile</h1>
+
+        <h2>Zunaira Mushtaq</h2>
+
+        <p>
+            Hello! I am a Software Engineering student.
+            I am learning HTML, CSS and JavaScript.
+        </p>
+
+        <h3>My Skills</h3>
+
+        <p>HTML, CSS, C++</p>
+
+        <button onclick="showMessage()">Click Me</button>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script>
+        const name = "it's me Zunaira";
+
+        let message = "Hello, " + name + "! Welcome to my profile.";
+
+        console.log(message);
+
+        function showMessage() {
+            document.getElementById("message").innerHTML = message;
+        }
+    </script>
+
+</body>
+</html>
